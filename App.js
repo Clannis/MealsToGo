@@ -42,6 +42,7 @@ const tabBarIcon =
 const screenOptions = ({ route }) => {
   return {
     tabBarIcon: tabBarIcon(route),
+    headerShown: false,
   };
 };
 
