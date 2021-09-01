@@ -1,5 +1,5 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ThemeProvider } from "styled-components/native";
 import "react-native-gesture-handler";
 import * as firebase from "firebase";
@@ -31,8 +31,6 @@ if (!firebase.apps.length) {
 }
 
 export default function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
   });
