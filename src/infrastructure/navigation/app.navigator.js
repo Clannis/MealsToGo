@@ -6,6 +6,7 @@ import { Text } from "react-native";
 
 import { SafeArea } from "../../components/utility/safe-area.component";
 import { RestaurantNavigator } from "./restaurants.navigator";
+import { MapScreen } from "../../features/map/screens/map.screen";
 
 const screenOptions = ({ route }) => {
   return {
@@ -35,14 +36,6 @@ const TAB_ICON_UNFOCUSED = {
   Restaurants: "md-restaurant-outline",
   Map: "ios-map-outline",
   Settings: "settings-outline",
-};
-
-const MapScreen = () => {
-  return (
-    <SafeArea>
-      <Text>Map!</Text>
-    </SafeArea>
-  );
 };
 
 const SettingsScreen = () => {
